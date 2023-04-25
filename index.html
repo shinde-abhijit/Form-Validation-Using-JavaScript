@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="clockArea">
+        <div class="timesDiv">
+            <!-- <p>Hour</p> -->
+            <div class="time" id="hourDiv"></div>
+        </div>
+        <div class="timesDiv">
+            <!-- <p>Minute</p> -->
+            <div class="time" id="minuteDiv"></div>
+        </div>
+        <div class="timesDiv">
+            <!-- <p>Second</p> -->
+            <div class="time" id="secondDiv"></div>
+        </div>
+    </div>
+    <form class="">
+        <div class="container col-5" id="mainContainer">
+            <h4 id="titleText">Registration Form</h4>
+            <hr id="formHr">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <label class="lusername col-12">Username</label>
+                        <input type="text" class="col-7" id="usernameField" onkeyup="validateUsername()" placeholder="Enter Username" />
+                        <span id="errorUsername" class="col-5 spanError"></span>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <label class="lemail col-12" for="">Email</label>
+                        <input type="text" class="col-7" id="emailField" onkeyup="validateEmail()" placeholder="Enter Email Address" />
+                        <span id="errorEmail" class="col-5 spanError"></span>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <label class="lmobile col-12" for="">Mobile</label>
+                        <input type="text" class="col-7" id="mobileField" onkeyup="validateMobile()" placeholder="Enter Mobile Number" />
+                        <span id="errorMobile" class="col-5 spanError"></span>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <label class="col-12" for="">Password</label>
+                        <input type="text" class="col-7" id="passwordField" onkeyup="validatePassword()" placeholder="Create Password" />
+                        <span id="errorPassword" class="col-5 spanError"></span>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <label class="col-12" for="">Aadhar Number</label>
+                        <input type="text" class="col-7" id="aadharField" onkeyup="validateAadhar()" placeholder="Enter Aadhar Number" />
+                        <span id="errorAadhar" class="col-5 spanError"></span>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <label class="lpancard col-12">Pan Number</label>
+                        <input type="text" class="col-7" id="pancardField" onkeyup="validatePancard()" placeholder="Enter PAN Number" />
+                        <span id="errorPancard" class="col-5 spanError"></span>
+                    </div>
+                </div>
+                <div class="col-12 mt-3">
+                    <div class="row">
+                        <button type="submit" class="btn col-12 btn-success form-control" id="submitField" onclick="return validateForm()">Submit</button>
+                        <span id="errorSubmit" class="col-5 spanError m-2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+<script src="./script.js"></script>
+<style>
+
+</style>
+</body>
+</html>
